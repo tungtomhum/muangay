@@ -1,0 +1,33 @@
+div>h2{
+            padding-top: 170px;
+            font-size: 35px;
+            font-weight: 700;
+            text-align: center;
+            animation: doimauchu ease 4s infinite;
+}
+.noidungcamon{
+            height: 400px;
+            background-image: url("https://cdn2.cache.vn/assets/backgrounds/ccf71c18c3ee19f197f8548486cf1d97.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            -moz-background-size: cover;
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+            -ms-background-size: cover;
+            background-position: center center;
+}
+footer{
+            margin-top: -10px;
+}
+@keyframes doimauchu {
+
+            from {color: red;}
+            to {color: rgb(9, 255, 0);}
+            
+           } 
+
+
+
+
+
+

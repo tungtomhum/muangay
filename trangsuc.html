@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/trangchu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANG SỨC</title>
+</head>
+<body>
+    <header name="top">
+        <div class="logo">
+            <a href="index.html"><img src="images/footer.jpg"></a>
+        </div>
+        <div class="nav">            
+            <ul>
+                <li><a href="index.html">TRANG CHỦ</a></li>
+                <li><a href="quanao.html">QUẦN ÁO</a></li>
+                <li><a href="laptop.html">ĐIỆN THOẠI & LAPTOP</a></li>
+                <li><a href="trangsuc.html">TRANG SỨC</a></li>
+                <li><a href="giadung.html">ĐỒ GIA DỤNG</a></li>
+                <li><a style="padding-top: 26px;" href="thanhtoan.html">THANH TOÁN <i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <div class="dangnhap">
+                <button type="button">
+                    <a style="padding: 9px 16.5px;" href="dangnhap.html">Đăng Nhập</a>
+                <button type="button">
+                    <a style="padding: 9px 25.8px;" href="dangky.html">Đăng Ký</a>
+                </button>
+            </div>
+            <form action="#">
+                <input type="text" placeholder="Tìm kiếm..." name="search" autocomplete="off">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+    </header>
+
+    <div class="slideshow">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="images/banner/bannertrangsuc.jpg" style="width:100%">
+            </div>
+              
+            <div class="mySlides fade">
+                <img src="images/banner/bannertrangsuc1.jpg" style="width:100%">
+            </div>
+              
+            <div class="mySlides fade">
+                <img src="images/banner/bannertrangsuc2.jpg" style="width:100%">
+            </div>
+        </div>
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
+        <script>
+            let slideIndex = 0;
+            showSlides();
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); 
+            }
+        </script>
+    </div>
+
+    <section>
+         <p style="margin-top: 50px;" class="name">TRANG SỨC</p>
+        <div class="xe">
+            <div class="xene">
+                <a href="trang1.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/fdde4d562b14c40a48a908f1d1c0f775"></a>
+                <h3 style="color: grey; font-size: 12px;">Mũ lưỡi trai nam nữ đa dạng họa tiết thêu chữ ,Nón kết phong cách Ulzzang form unisex nam nữ</h3>
+                <p class="gia"> GIÁ: 27.000 VNĐ </p>
+                <a class="linkshop" href="trang1.html">MUA NGAY</a>
+            </div>     
+            <div class="xene">
+                <a href="trang2.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/fa755dedd8695ed6639a4bae338f714b"></a>
+                <h3 style="color: grey; font-size: 12px;">Vòng Tay Phong Cách Hip Hop Thời Trang Hàn Quốc</h3>
+                <p class="gia"> GIÁ: 5.000 - 24.000 VNĐ </p>
+                <a class="linkshop" href="trang2.html">MUA NGAY</a>
+            </div> 
+            <div class="xene">
+                <a href="trang3.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/3b4fc445e13c8487ca876a15fdfa9eed"></a>
+                <h3 style="color: grey; font-size: 12px;">Bông Tai Nữ Vàng 14K BTAM32 Huy Thanh Jewelry</h3>
+                <p class="gia"> GIÁ: 824.400 VNĐ </p>
+                <a class="linkshop" href="trang3.html">MUA NGAY</a>
+            </div> 
+            <div class="xene">
+                <a href="trang4.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/e0f5298fed9345bc4ce134c2b89e1443"></a>
+                <h3 style="color: grey; font-size: 12px;"> Ielgy Túi Xách Dáng Vuông Ngang Thời Trang Cao Cấp Phong Cách Phương Tây</h3>
+                <p class="gia"> GIÁ: 225.000 VNĐ </p>
+                <a class="linkshop" href="trang4.html">MUA NGAY</a>
+            </div> 
+            <div class="xene">
+                <a href="trang5.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/df0f784ea25cb76435b21b8ecbfd53e1"></a>
+                <h3 style="color: grey; font-size: 12px;">Sét vòng cổ lắc tay bông tai cỏ 4 lá cao cấp bảo hành trọn đời ko rỉ</h3>
+                <p class="gia"> GIÁ: 2.500.000 VNĐ </p>
+                <a class="linkshop" href="trang5.html">MUA NGAY</a>
+            </div> 
+        </div>
+        <div class="xe">
+            <div class="xene">
+                <a href="trang6.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/c3c981d0d16904961b1690a14c3bdfe0"></a>
+                <h3 style="color: grey; font-size: 12px;">Nhẫn cặp tình đẹp đính đá cao cấp ND0269 - Trang Sức TNJ</h3>
+                <p class="gia"> GIÁ: 259.000 - 529.000 VNĐ </p>
+                <a class="linkshop" href="trang6.html">MUA NGAY</a>
+            </div> 
+            <div class="xene">
+                <a href="trang7.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/ff6e042ebd30915e2a04fa967321eacd"></a>
+                <h3 style="color: grey; font-size: 12px;">Lắc Chân Mạ Bạc Với Mặt Hình Cỏ Bốn Lá Xinh Xắn</h3>
+                <p class="gia"> GIÁ: 10.000 VNĐ </p>
+                <a class="linkshop" href="trang7.html">MUA NGAY</a>
+            </div> 
+            <div class="xene">
+                <a href="trang8.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/73925abc224ac3b1c263f629b4a926a8"></a>
+                <h3 style="color: grey; font-size: 12px;">Bộ trang điểm đầy đủ LAMEILA 7 món makeup đầm nữ xinh Kem BB, Phấn phủ, Phấn mắt, Mascara,...</h3>
+                <p class="gia"> GIÁ: 95.000 VNĐ </p>
+                <a class="linkshop" href="trang8.html">MUA NGAY</a>
+            </div> 
+            <div class="xene">
+                <a href="trang9.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/1c37933f57b3b5e2f96a3962cb0340be"></a>
+                <h3 style="color: grey; font-size: 12px;">UR SUGAR Gel Sơn Móng Tay 7.5ml</h3>
+                <p class="gia"> GIÁ: 15.900 - 17.500 VNĐ </p>
+                <a class="linkshop" href="trang9.html">MUA NGAY</a>
+            </div> 
+            <div class="xene">
+                <a href="trang10.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/206b2b1ece8ebf67659d5e4e9c7bbfd5"></a>
+                <h3 style="color: grey; font-size: 12px;">Son Tom Ford cao cấp HOT TREND 2021, CHUẨN AUTH 100% ĐỦ BILL</h3>
+                <p class="gia"> GIÁ: 520.000 - 584.350 VNĐ </p>
+                <a class="linkshop" href="trang10.html">MUA NGAY</a>
+            </div>  
+        </div>
+    </section>
+
+
+    <footer >
+        <div class="gioithieu">
+            <a href="index.html"><img src="images/footer.jpg"></a>
+            <ul>
+                <li><b>Địa chỉ:</b> phường Hiệp Thành, Thủ Dầu Một, Bình Dương</li>
+                <li><b>Email:</b> muangay@gmail.com</li>
+                <li><b>SĐT:</b> 091 9208 875</li>
+                <li class="icon">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram-square"></i></a>
+                    <a href="https://coccoc.com/search?query=twitter"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://accounts.google.com/AccountChooser/signinchooser?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser"><i class="fa-regular fa-at"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="thongtin">
+            <h3>HỖ TRỢ</h3>
+            <ul>
+                <li> <a href="#"> > Hướng dẫn mua hàng</a></li>
+                <li> <a href="#"> > Hướng dẫn thanh toán</a></li>
+                <li> <a href="#"> > Chính sách bảo hành</a></li>
+                <li> <a href="#"> > Chính sách đổi trả</a></li>
+                <li><a href="#"> > Tư vấn Khách hàng</a></li>
+            </ul>
+        </div>
+        <div class="danhmuc">
+            <h3>LIÊN KẾT</h3>
+            <ul>
+                <li><a href="index.html">> Trang chủ</a></li>
+                <li><a href="quanao.html">> Quần áo</a></li>
+                <li><a href="laptop.html">> Điện thoại & Laptop</a></li>
+                <li><a href="trangsuc.html">> Trang sức</a></li>
+                <li><a href="giadung.html">> Đồ gia dụng</a></li>
+                <li><a href="thanhtoan.html">> Thanh toán</a></li>
+            </ul>
+        </div>
+    </footer>
+    <a class="dautrang" href="#top"><i class="fa-solid fa-angles-up"></i></a>
+</body>
+</html>

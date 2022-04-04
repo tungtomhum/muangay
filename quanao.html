@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/trangchu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUẦN ÁO</title>
+</head>
+<body>
+    <header name="top">
+        <div class="logo">
+            <a href="index.html"><img src="images/footer.jpg"></a>
+        </div>
+        <div class="nav">            
+            <ul>
+                <li><a href="index.html">TRANG CHỦ</a></li>
+                <li><a href="quanao.html">QUẦN ÁO</a></li>
+                <li><a href="laptop.html">ĐIỆN THOẠI & LAPTOP</a></li>
+                <li><a href="trangsuc.html">TRANG SỨC</a></li>
+                <li><a href="giadung.html">ĐỒ GIA DỤNG</a></li>
+                <li><a style="padding-top: 26px;" href="thanhtoan.html">THANH TOÁN <i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <div class="dangnhap">
+                <button type="button">
+                    <a style="padding: 9px 16.5px;" href="dangnhap.html">Đăng Nhập</a>
+                <button type="button">
+                    <a style="padding: 9px 25.8px;" href="dangky.html">Đăng Ký</a>
+                </button>
+            </div>
+            <form action="#">
+                <input type="text" placeholder="Tìm kiếm..." name="search" autocomplete="off">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+    </header>
+
+    <div class="slideshow">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="images/banner/bannertrangquanao.jpg" style="width:100%">
+            </div>
+              
+            <div class="mySlides fade">
+                <img src="images/banner/bannertrangquanao1.jpg" style="width:100%">
+            </div>
+              
+            <div class="mySlides fade">
+                <img src="images/banner/bannertrangquanao2.jpg" style="width:100%">
+            </div>
+        </div>
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
+        <script>
+            let slideIndex = 0;
+            showSlides();
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); 
+            }
+        </script>
+    </div>
+
+    <section>
+        <p style="margin-top: 50px;" class="name">QUẦN ÁO</p>
+        <div class="xe">
+            <div class="xene">
+                <a href="quanao1.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/36681386aa67c57d7e97ab0d2adcae36"></a>
+                <h3 style="color: grey; font-size: 12px;">Áo Croptop Viền Bèo Cúc Bật (Ảnh thật) YUMI BÁN SỈ ⚡ Áo Croptop Tay Ngắn Bèo Thun Gân Co Giãn</h3>
+                <p class="gia"> GIÁ: 72.000 VNĐ </p>
+                <a class="linkshop" href="quanao1.html">MUA NGAY</a>
+            </div>
+            <div class="xene">
+                <a href="quanao2.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/ed2b37a0d1da10736c34fd794ebb836d"></a>
+                <h3 style="color: grey; font-size: 12px;">Áo ulzzang 🌸 Áo croptop polo cổ bẻ dài tay cá tính dành cho nữ có túi ngực PHULA style Hàn Quốc</h3>
+                <p class="gia"> GIÁ: 60.000 VNĐ </p>
+                <a class="linkshop" href="quanao2.html">MUA NGAY</a>
+            </div>
+            <div class="xene">
+                <a href="quanao3.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/12496ab8fd32b4b88613d5fd2917838d"></a>
+                <h3 style="color: grey; font-size: 12px;">Áo thun basic t-shirt 100% cotton</h3>
+                <p class="gia"> GIÁ: 250.000 VNĐ </p>
+                <a class="linkshop" href="quanao3.html">MUA NGAY</a>
+            </div>
+            <div class="xene">
+                <a href="quanao4.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/9eb6d2bb149739b7d6b91bc6f2c70c7d"></a>
+                <h3 style="color: grey; font-size: 12px;">Áo croptop Choobe nữ dài tay có cổ vải cotton co giãn thoáng mát crotop thun đẹp A39</h3>
+                <p class="gia"> GIÁ: 119.000 VNĐ </p>
+                <a class="linkshop" href="quanao4.html">MUA NGAY</a>
+            </div>
+            <div class="xene">
+                <a href="quanao5.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/6f356bc0c71521361141544b0e4083fe"></a>
+                <h3 style="color: grey; font-size: 12px;">Áo phông nam nữ cao cấp SPACE TRAVEL CCS84 by COCCACH</h3>
+                <p class="gia"> GIÁ: 174.000 VNĐ </p>
+                <a class="linkshop" href="quanao5.html">MUA NGAY</a>
+            </div>     
+        </div>
+        <div class="xe">
+            <div class="xene">
+                <a href="quanao6.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/077b4f12cd804b2d491422438f8b5f2e"></a>
+                <h3 style="color: grey; font-size: 12px;">Quần Kaki Nam Nữ Ống Suông Basic Unisex - Kiểu quần baggy nam ống rộng màu đen và be Leevin Store</h3>
+                <p class="gia"> GIÁ: 111.000 VNĐ </p>
+                <a class="linkshop" href="quanao6.html">MUA NGAY</a>
+            </div>
+            <div class="xene">
+                <a href="quanao7.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/1c2638735dc39990b8f5e647e967943d"></a>
+                <h3 style="color: grey; font-size: 12px;">Áo Thun Nam Nữ 714 STREET TIVI Unisex - Kiểu áo phông nữ nam form rộng tay lỡ Ulzzang - Leevin Store</h3>
+                <p class="gia"> GIÁ: 88.000 VNĐ </p>
+                <a class="linkshop" href="quanao7.html">MUA NGAY</a>
+            </div>
+            <div class="xene">
+                <a href="quanao8.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/79a3a9e1376477adc6eb3d4d1ab71498"></a>
+                <h3 style="color: grey; font-size: 12px;">Hộp 4 Sịp Đùi Boxer Thông Hơi Cao Cấp Dành Cho Nam VEIKUCOOL</h3>
+                <p class="gia"> GIÁ: 99.000 VNĐ </p>
+                <a class="linkshop" href="quanao8.html">MUA NGAY</a>
+            </div>
+            <div class="xene">
+                <a href="quanao9.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/d52cfa3cf4e50681aa999e9b855d6468"></a>
+                <h3 style="color: grey; font-size: 12px;">Áo chống nắng thời trang thể thao nam cao cấp vân sọc vải kim thấm hút mồ hôi thoáng mát.</h3>
+                <p class="gia"> GIÁ: 109.000 VNĐ </p>
+                <a class="linkshop" href="quanao9.html">MUA NGAY</a>
+            </div>
+            <div class="xene">
+                <a href="quanao10.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/ba6c04eeffe0b8e16eea89bcb2b53a9a_tn"></a>
+                <h3 style="color: grey; font-size: 12px;">Áo sơ mi nam form rộng Pastel Premium phong cách Unisex thời trang JBAGY</h3>
+                <p class="gia"> GIÁ: 149.000 - 159.000 VNĐ </p>
+                <a class="linkshop" href="quanao10.html">MUA NGAY</a>
+            </div>     
+        </div>
+    </section>
+
+
+    <footer >
+        <div class="gioithieu">
+            <a href="index.html"><img src="images/footer.jpg"></a>
+            <ul>
+                <li><b>Địa chỉ:</b> phường Hiệp Thành, Thủ Dầu Một, Bình Dương</li>
+                <li><b>Email:</b> muangay@gmail.com</li>
+                <li><b>SĐT:</b> 091 9208 875</li>
+                <li class="icon">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram-square"></i></a>
+                    <a href="https://coccoc.com/search?query=twitter"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://accounts.google.com/AccountChooser/signinchooser?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser"><i class="fa-regular fa-at"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="thongtin">
+            <h3>HỖ TRỢ</h3>
+            <ul>
+                <li> <a href="#"> > Hướng dẫn mua hàng</a></li>
+                <li> <a href="#"> > Hướng dẫn thanh toán</a></li>
+                <li> <a href="#"> > Chính sách bảo hành</a></li>
+                <li> <a href="#"> > Chính sách đổi trả</a></li>
+                <li><a href="#"> > Tư vấn Khách hàng</a></li>
+            </ul>
+        </div>
+        <div class="danhmuc">
+            <h3>LIÊN KẾT</h3>
+            <ul>
+                <li><a href="index.html">> Trang chủ</a></li>
+                <li><a href="quanao.html">> Quần áo</a></li>
+                <li><a href="laptop.html">> Điện thoại & Laptop</a></li>
+                <li><a href="trangsuc.html">> Trang sức</a></li>
+                <li><a href="giadung.html">> Đồ gia dụng</a></li>
+                <li><a href="thanhtoan.html">> Thanh toán</a></li>
+            </ul>
+        </div>
+    </footer>
+    <a class="dautrang" href="#top"><i class="fa-solid fa-angles-up"></i></a>
+</body>
+</html>

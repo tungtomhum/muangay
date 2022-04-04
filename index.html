@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/trangchu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANG CHỦ</title>
+</head>
+<body class="all">
+     <header name="top">
+        <div class="logo">
+            <a href="index.html"><img src="images/footer.jpg"></a>
+        </div>
+        <div class="nav">            
+            <ul>
+                <li><a href="index.html">TRANG CHỦ</a></li>
+                <li><a href="quanao.html">QUẦN ÁO</a></li>
+                <li><a href="laptop.html">ĐIỆN THOẠI & LAPTOP</a></li>
+                <li><a href="trangsuc.html">TRANG SỨC</a></li>
+                <li><a href="giadung.html">ĐỒ GIA DỤNG</a></li>
+                <li><a style="padding-top: 26px;" href="thanhtoan.html">THANH TOÁN <i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <div class="dangnhap">
+                <button type="button">
+                    <a style="padding: 9px 16.5px;" href="dangnhap.html">Đăng Nhập</a>
+                <button type="button">
+                    <a style="padding: 9px 25.8px;" href="dangky.html">Đăng Ký</a>
+                </button>
+            </div>
+            <form action="#">
+                <input type="text" placeholder="Tìm kiếm..." name="search" autocomplete="off">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+    </header>
+
+    <div class="slideshow">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="images/banner/bannertrangchu.jpg" style="width:100%">
+            </div>
+              
+            <div class="mySlides fade">
+                <img src="images/banner/bannertrangquanao2.jpg" style="width:100%">
+            </div>
+              
+            <div class="mySlides fade">
+                <img src="images/banner/bannertranglaptop1.jpg" style="width:100%">
+            </div>
+        </div>
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
+        <script>
+            let slideIndex = 0;
+            showSlides();
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); 
+            }
+        </script>
+    </div>
+
+    <section>
+        <p style="margin-top: 50px;" class="name">QUẦN ÁO</p>
+        <div class="xe">
+            <div class="xene">
+                <a href="quanao1.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/36681386aa67c57d7e97ab0d2adcae36"></a>
+                <h3 style="color: grey; font-size: 12px;">Áo Croptop Viền Bèo Cúc Bật (Ảnh thật) YUMI BÁN SỈ ⚡ Áo Croptop Tay Ngắn Bèo Thun Gân Co Giãn</h3>
+                <p class="gia"> GIÁ: 72.000 VNĐ </p>
+                <a class="linkshop" href="quanao1.html">MUA NGAY</a>
+            </div>
+            <div class="xene">
+                <a href="quanao2.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/ed2b37a0d1da10736c34fd794ebb836d"></a>
+                <h3 style="color: grey; font-size: 12px;">Áo ulzzang 🌸 Áo croptop polo cổ bẻ dài tay cá tính dành cho nữ có túi ngực PHULA style Hàn Quốc</h3>
+                <p class="gia"> GIÁ: 60.000 VNĐ </p>
+                <a class="linkshop" href="quanao2.html">MUA NGAY</a>
+            </div>
+            <div class="xene">
+                <a href="quanao3.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/12496ab8fd32b4b88613d5fd2917838d"></a>
+                <h3 style="color: grey; font-size: 12px;">Áo thun basic t-shirt 100% cotton</h3>
+                <p class="gia"> GIÁ: 250.000 VNĐ </p>
+                <a class="linkshop" href="quanao3.html">MUA NGAY</a>
+            </div>
+            <div class="xene">
+                <a href="quanao4.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/9eb6d2bb149739b7d6b91bc6f2c70c7d"></a>
+                <h3 style="color: grey; font-size: 12px;">Áo croptop Choobe nữ dài tay có cổ vải cotton co giãn thoáng mát crotop thun đẹp A39</h3>
+                <p class="gia"> GIÁ: 119.000 VNĐ </p>
+                <a class="linkshop" href="quanao4.html">MUA NGAY</a>
+            </div>
+            <div class="xene">
+                <a href="quanao5.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/6f356bc0c71521361141544b0e4083fe"></a>
+                <h3 style="color: grey; font-size: 12px;">Áo phông nam nữ cao cấp SPACE TRAVEL CCS84 by COCCACH</h3>
+                <p class="gia"> GIÁ: 174.000 VNĐ </p>
+                <a class="linkshop" href="quanao5.html">MUA NGAY</a>
+            </div>     
+        </div>
+        <div class="xe">
+            <div class="xene">
+                <a href="quanao6.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/077b4f12cd804b2d491422438f8b5f2e"></a>
+                <h3 style="color: grey; font-size: 12px;">Quần Kaki Nam Nữ Ống Suông Basic Unisex - Kiểu quần baggy nam ống rộng màu đen và be Leevin Store</h3>
+                <p class="gia"> GIÁ: 111.000 VNĐ </p>
+                <a class="linkshop" href="quanao6.html">MUA NGAY</a>
+            </div>
+            <div class="xene">
+                <a href="quanao7.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/1c2638735dc39990b8f5e647e967943d"></a>
+                <h3 style="color: grey; font-size: 12px;">Áo Thun Nam Nữ 714 STREET TIVI Unisex - Kiểu áo phông nữ nam form rộng tay lỡ Ulzzang - Leevin Store</h3>
+                <p class="gia"> GIÁ: 88.000 VNĐ </p>
+                <a class="linkshop" href="quanao7.html">MUA NGAY</a>
+            </div>
+            <div class="xene">
+                <a href="quanao8.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/79a3a9e1376477adc6eb3d4d1ab71498"></a>
+                <h3 style="color: grey; font-size: 12px;">Hộp 4 Sịp Đùi Boxer Thông Hơi Cao Cấp Dành Cho Nam VEIKUCOOL</h3>
+                <p class="gia"> GIÁ: 99.000 VNĐ </p>
+                <a class="linkshop" href="quanao8.html">MUA NGAY</a>
+            </div>
+            <div class="xene">
+                <a href="quanao9.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/d52cfa3cf4e50681aa999e9b855d6468"></a>
+                <h3 style="color: grey; font-size: 12px;">Áo chống nắng thời trang thể thao nam cao cấp vân sọc vải kim thấm hút mồ hôi thoáng mát.</h3>
+                <p class="gia"> GIÁ: 109.000 VNĐ </p>
+                <a class="linkshop" href="quanao9.html">MUA NGAY</a>
+            </div>
+            <div class="xene">
+                <a href="quanao10.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/ba6c04eeffe0b8e16eea89bcb2b53a9a_tn"></a>
+                <h3 style="color: grey; font-size: 12px;">Áo sơ mi nam form rộng Pastel Premium phong cách Unisex thời trang JBAGY</h3>
+                <p class="gia"> GIÁ: 149.000 - 159.000 VNĐ </p>
+                <a class="linkshop" href="quanao10.html">MUA NGAY</a>
+            </div>     
+        </div>
+
+        <p style="margin-top: 450px;" class="name">ĐIỆN THOẠI & LAPTOP</p>
+        <div class="xe">
+            <div class="xene">
+                <a href="lap1.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/42c51761d53b623a5bc6fcf8772d9e94"></a>
+                <h3 style="color: grey; font-size: 12px;">Apple MacBook Pro (2020) M1 Chip, 13.3 inch, 8GB, 256GB SSD</h3>
+                <p class="gia"> GIÁ: 30.290.000 VNĐ </p>
+                <a class="linkshop" href="lap1.html">MUA NGAY</a>
+            </div>
+            <div class="xene">
+                <a href="lap2.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/c064423004a37893d1d4b05531da0f33"></a>
+                <h3 style="color: grey; font-size: 12px;">Apple iPhone 13 Pro Max 256GB</h3>
+                <p class="gia"> GIÁ: 31.390.000 VNĐ </p>
+                <a class="linkshop" href="lap2.html">MUA NGAY</a>
+            </div>
+            <div class="xene">
+                <a href="lap3.html"> <img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/31bea8a5b6f7c49a5a659eda2ab1fba5_tn"></a>
+                <h3 style="color: grey; font-size: 12px;">Điện thoại Xiaomi Redmi Note 11 Pro 8+128GB | Pin 5160mAh | MediaTek Helio G96 | Sạc nhanh 67W</h3>
+                <p class="gia"> GIÁ: 7.490.000 VNĐ </p>
+                <a class="linkshop" href="lap3.html">MUA NGAY</a>
+            </div>
+            <div class="xene">
+                <a href="lap4.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/36a9d7b47727e09bcb296f217c4a6341"></a>
+                <h3 style="color: grey; font-size: 12px;"> Điện thoại OPPO A74 (8GB/128GB) - Hàng Chính Hãng</h3>
+                <p class="gia"> GIÁ: 5.780.000 VNĐ </p>
+                <a class="linkshop" href="lap4.html">MUA NGAY</a>
+            </div>
+            <div class="xene">
+                <a href="lap5.html"> <img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/67d2eee90dff2290728dd024928de729"></a>
+                <h3 style="color: grey; font-size: 12px;">Điện thoại OPPO Reno7z 5G (8GB/128GB) - Hàng Chính Hãng</h3>
+                <p class="gia"> GIÁ: 10.290.000 VNĐ </p>
+                <a class="linkshop" href="lap5.html">MUA NGAY</a>
+            </div>     
+        </div>
+        <div class="xe">
+            <div class="xene">
+                <a href="lap6.html"> <img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/013760f2224281ee6dad6f5d4e64b5ed"></a>
+                <h3 style="color: grey; font-size: 12px;">Laptop Gaming AsusTUF FX516PE-HN005T i7-1137H/8G RAM 512G SSD15.6FHD 144hz/4GD6</h3>
+                <p class="gia"> GIÁ: 28.699.000 VNĐ </p>
+                <a class="linkshop" href="lap6.html">MUA NGAY</a>
+            </div>
+            <div class="xene">
+                <a href="lap7.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/33531e2565bccb3f35a41f0241f1398d"></a>
+                <h3 style="color: grey; font-size: 12px;"> Laptop ASUS ROG Strix G15 G513QC-HN015T R7-5800H| 8GB |512GB |3050 4GB |15.6' |W10</h3>
+                <p class="gia"> GIÁ: 25.740.000 VNĐ </p>
+                <a class="linkshop" href="lap7.html">MUA NGAY</a>
+            </div>
+            <div class="xene">
+                <a href="lap8.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/5dbec4fd9d9c6746aa03482d137932bb"></a>
+                <h3 style="color: grey; font-size: 12px;">[ELGAME23 giảm 2tr]Laptop Dell Gaming G15 5515 (70266675) R7-5800H|16GB|512GB</h3>
+                <p class="gia"> GIÁ: 33.990.000 VNĐ </p>
+                <a class="linkshop" href="lap8.html">MUA NGAY</a>
+            </div>
+            <div class="xene">
+                <a href="lap9.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/7ce1145b925f444d16e7519f26f3ee9e"></a>
+                <h3 style="color: grey; font-size: 12px;">Laptop LG gram 16ZD90P-G.AX54A5 16'', i5 Gen11, 8GB, 512GB, màu trắng</h3>
+                <p class="gia"> GIÁ: 39.890.000 VNĐ </p>
+                <a class="linkshop" href="lap9.html">MUA NGAY</a>
+            </div>
+            <div class="xene">
+                <a href="lap10.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/c381e75bcf9c5b534c6d291ed13c229c"></a>
+                <h3 style="color: grey; font-size: 12px;">Điện Thoại Samsung Galaxy S20 FE (8GB/256GB) - Hàng Chính Hãng</h3>
+                <p class="gia"> GIÁ: 10.490.000 VNĐ </p>
+                <a class="linkshop" href="lap10.html">MUA NGAY</a>
+            </div>     
+        </div>
+
+        <p style="margin-top: 450px;" class="name">TRANG SỨC</p>
+        <div class="xe">
+            <div class="xene">
+                <a href="trang1.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/fdde4d562b14c40a48a908f1d1c0f775"></a>
+                <h3 style="color: grey; font-size: 12px;">Mũ lưỡi trai nam nữ đa dạng họa tiết thêu chữ ,Nón kết phong cách Ulzzang form unisex nam nữ</h3>
+                <p class="gia"> GIÁ: 27.000 VNĐ </p>
+                <a class="linkshop" href="trang1.html">MUA NGAY</a>
+            </div>     
+            <div class="xene">
+                <a href="trang2.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/fa755dedd8695ed6639a4bae338f714b"></a>
+                <h3 style="color: grey; font-size: 12px;">Vòng Tay Phong Cách Hip Hop Thời Trang Hàn Quốc</h3>
+                <p class="gia"> GIÁ: 5.000 - 24.000 VNĐ </p>
+                <a class="linkshop" href="trang2.html">MUA NGAY</a>
+            </div> 
+            <div class="xene">
+                <a href="trang3.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/3b4fc445e13c8487ca876a15fdfa9eed"></a>
+                <h3 style="color: grey; font-size: 12px;">Bông Tai Nữ Vàng 14K BTAM32 Huy Thanh Jewelry</h3>
+                <p class="gia"> GIÁ: 824.400 VNĐ </p>
+                <a class="linkshop" href="trang3.html">MUA NGAY</a>
+            </div> 
+            <div class="xene">
+                <a href="trang4.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/e0f5298fed9345bc4ce134c2b89e1443"></a>
+                <h3 style="color: grey; font-size: 12px;"> Ielgy Túi Xách Dáng Vuông Ngang Thời Trang Cao Cấp Phong Cách Phương Tây</h3>
+                <p class="gia"> GIÁ: 225.000 VNĐ </p>
+                <a class="linkshop" href="trang4.html">MUA NGAY</a>
+            </div> 
+            <div class="xene">
+                <a href="trang5.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/df0f784ea25cb76435b21b8ecbfd53e1"></a>
+                <h3 style="color: grey; font-size: 12px;">Sét vòng cổ lắc tay bông tai cỏ 4 lá cao cấp bảo hành trọn đời ko rỉ</h3>
+                <p class="gia"> GIÁ: 2.500.000 VNĐ </p>
+                <a class="linkshop" href="trang5.html">MUA NGAY</a>
+            </div> 
+        </div>
+        <div class="xe">
+            <div class="xene">
+                <a href="trang6.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/c3c981d0d16904961b1690a14c3bdfe0"></a>
+                <h3 style="color: grey; font-size: 12px;">Nhẫn cặp tình đẹp đính đá cao cấp ND0269 - Trang Sức TNJ</h3>
+                <p class="gia"> GIÁ: 259.000 - 529.000 VNĐ </p>
+                <a class="linkshop" href="trang6.html">MUA NGAY</a>
+            </div> 
+            <div class="xene">
+                <a href="trang7.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/ff6e042ebd30915e2a04fa967321eacd"></a>
+                <h3 style="color: grey; font-size: 12px;">Lắc Chân Mạ Bạc Với Mặt Hình Cỏ Bốn Lá Xinh Xắn</h3>
+                <p class="gia"> GIÁ: 10.000 VNĐ </p>
+                <a class="linkshop" href="trang7.html">MUA NGAY</a>
+            </div> 
+            <div class="xene">
+                <a href="trang8.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/73925abc224ac3b1c263f629b4a926a8"></a>
+                <h3 style="color: grey; font-size: 12px;">Bộ trang điểm đầy đủ LAMEILA 7 món makeup đầm nữ xinh Kem BB, Phấn phủ, Phấn mắt, Mascara,...</h3>
+                <p class="gia"> GIÁ: 95.000 VNĐ </p>
+                <a class="linkshop" href="trang8.html">MUA NGAY</a>
+            </div> 
+            <div class="xene">
+                <a href="trang9.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/1c37933f57b3b5e2f96a3962cb0340be"></a>
+                <h3 style="color: grey; font-size: 12px;">UR SUGAR Gel Sơn Móng Tay 7.5ml</h3>
+                <p class="gia"> GIÁ: 15.900 - 17.500 VNĐ </p>
+                <a class="linkshop" href="trang9.html">MUA NGAY</a>
+            </div> 
+            <div class="xene">
+                <a href="trang10.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/206b2b1ece8ebf67659d5e4e9c7bbfd5"></a>
+                <h3 style="color: grey; font-size: 12px;">Son Tom Ford cao cấp HOT TREND 2021, CHUẨN AUTH 100% ĐỦ BILL</h3>
+                <p class="gia"> GIÁ: 520.000 - 584.350 VNĐ </p>
+                <a class="linkshop" href="trang10.html">MUA NGAY</a>
+            </div>  
+        </div>
+
+        <p style="margin-top: 450px;" class="name">ĐỒ GIA DỤNG</p>
+        <div class="xe">
+            <div class="xene">
+                <a href="dung1.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/4e3f12a1af1838fb2c3875ce343fccb2"></a>
+                <h3 style="color: grey; font-size: 12px;">Nồi nấu cháo chậm Bear 0,8L cho bé ăn dặm - Ninh hầm hấp cách thuỷ chưng yến đa năng SUBE001</h3>
+                <p class="gia"> GIÁ: 399.000 VNĐ </p>
+                <a class="linkshop" href="dung1.html">MUA NGAY</a>
+            </div>
+            <div class="xene">
+                <a href="dung2.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/6fad0527b52b55ef011ccb2cc8ef22a2"></a>
+                <h3 style="color: grey; font-size: 12px;">Bình đun siêu tốc GAABOR GK-S23P dung tích lớn 2.3L - 1500W - Thép không gỉ - Hàng chính hãng</h3>
+                <p class="gia"> GIÁ: 155.000 VNĐ </p>
+                <a class="linkshop" href="dung2.html">MUA NGAY</a>
+            </div>
+            <div class="xene">
+                <a href="dung3.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/77f84a86f3c64d1f1b96b9dcdd4384a7"></a>
+                <h3 style="color: grey; font-size: 12px;">Máy Sấy Tóc 2 Chiều Nóng Lạnh Công Suất Lớn / Toshiba 551 3000W CHẤT LƯỢNG CAO</h3>
+                <p class="gia"> GIÁ: 129.000 VNĐ </p>
+                <a class="linkshop" href="dung3.html">MUA NGAY</a>
+            </div>
+            <div class="xene">
+                <a href="dung4.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/28b28e8a8d96aa8f9ebc70bdaee88396"></a>
+                <h3 style="color: grey; font-size: 12px;">Máy khoan cầm tay TOTAL TG108136 750W Máy khoan điện có khoan động lực, 2 chức năng búa và khoan</h3>
+                <p class="gia"> GIÁ: 704.000 VNĐ </p>
+                <a class="linkshop" href="dung4.html">MUA NGAY</a>
+            </div>
+            <div class="xene">
+                <a href="dung5.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/87de1f25a7873b3a05ee47496ef6d6a6"></a>
+                <h3 style="color: grey; font-size: 12px;">Máy Phun Sương Cầm Tay Tạo Ẩm Nano , Máy Xông Mặt Mini Spa, Xông Tinh Dầu Xịt</h3>
+                <p class="gia"> GIÁ: 29.000 - 75.000 VNĐ </p>
+                <a class="linkshop" href="dung5.html">MUA NGAY</a>
+            </div>    
+        </div>
+        <div class="xe">
+            <div class="xene">
+                <a href="dung6.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/6b12e384961590b983aef654b1e76953"></a>
+                <h3 style="color: grey; font-size: 12px;">Nồi Cơm Điện Tử 1.5L BlueStone RCB-5949</h3>
+                <p class="gia"> GIÁ: 1.599.000 VNĐ </p>
+                <a class="linkshop" href="dung6.html">MUA NGAY</a>
+            </div>
+            <div class="xene">
+                <a href="dung7.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/bbefc771da6116258844d09392742782"></a>
+                <h3 style="color: grey; font-size: 12px;">Compo 3 Chảo Mini Tạo Hình</h3>
+                <p class="gia"> GIÁ: 100.000 VNĐ </p>
+                <a class="linkshop" href="dung7.html">MUA NGAY</a>
+            </div>
+            <div class="xene">
+                <a href="dung8.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/fd06d43875eeddf14e8dd6674f41cbb6"></a>
+                <h3 style="color: grey; font-size: 12px;">Bàn chải đánh răng than tre hoạt tính Hàn Quốc hàng loại 1 - KHO SỈ MB</h3>
+                <p class="gia"> GIÁ: 1.000 - 3.300 VNĐ </p>
+                <a class="linkshop" href="dung8.html">MUA NGAY</a>
+            </div>
+            <div class="xene">
+                <a href="dung9.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/6325c8fa2c621cae02105f0999c72086"></a>
+                <h3 style="color: grey; font-size: 12px;">Bộ chén dĩa Minh Long 23 sản phẩm Camellia Hoa Mai</h3>
+                <p class="gia"> GIÁ: 2.601.720 VNĐ </p>
+                <a class="linkshop" href="dung9.html">MUA NGAY</a>
+            </div>
+            <div class="xene">
+                <a href="dung10.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/0839677ba02989f09d0fe4e99fe28fe8"></a>
+                <h3 style="color: grey; font-size: 12px;">Nước rửa chén, vòi inox lấy nước rửa bát 304</h3>
+                <p class="gia"> GIÁ: 95.000 VNĐ </p>
+                <a class="linkshop" href="dung10.html">MUA NGAY</a>
+            </div>    
+        </div>
+    </section>
+
+
+    <footer >
+        <div class="gioithieu">
+            <a href="index.html"><img src="images/footer.jpg"></a>
+            <ul>
+                <li><b>Địa chỉ:</b> phường Hiệp Thành, Thủ Dầu Một, Bình Dương</li>
+                <li><b>Email:</b> muangay@gmail.com</li>
+                <li><b>SĐT:</b> 091 9208 875</li>
+                <li class="icon">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram-square"></i></a>
+                    <a href="https://coccoc.com/search?query=twitter"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://accounts.google.com/AccountChooser/signinchooser?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser"><i class="fa-regular fa-at"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="thongtin">
+            <h3>HỖ TRỢ</h3>
+            <ul>
+                <li> <a href="#"> > Hướng dẫn mua hàng</a></li>
+                <li> <a href="#"> > Hướng dẫn thanh toán</a></li>
+                <li> <a href="#"> > Chính sách bảo hành</a></li>
+                <li> <a href="#"> > Chính sách đổi trả</a></li>
+                <li><a href="#"> > Tư vấn Khách hàng</a></li>
+            </ul>
+        </div>
+        <div class="danhmuc">
+            <h3>LIÊN KẾT</h3>
+            <ul>
+                <li><a href="index.html">> Trang chủ</a></li>
+                <li><a href="quanao.html">> Quần áo</a></li>
+                <li><a href="laptop.html">> Điện thoại & Laptop</a></li>
+                <li><a href="trangsuc.html">> Trang sức</a></li>
+                <li><a href="giadung.html">> Đồ gia dụng</a></li>
+                <li><a href="thanhtoan.html">> Thanh toán</a></li>
+            </ul>
+        </div>
+    </footer>
+    <a class="dautrang" href="#top"><i class="fa-solid fa-angles-up"></i></a>
+</body>
+</html>

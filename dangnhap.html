@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Đăng nhập</title>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/dangnhap.css">
+     <script language="javascript" >
+         function KiemTraThongTin(){
+    var tenDangNhap=document.getElementById("tendangnhap");
+    if (tenDangNhap.value==""){
+        alert("Vui lòng nhập tên đăng nhập.");
+        tenDangNhap.focus();
+        return false;
+    }
+    var matKhau=document.getElementById("matkhau");
+    if (matKhau.value==""){
+        alert("Vui lòng nhập mật khẩu.");
+        matKhau.focus();
+        return false;
+    }
+    alert("Đăng nhập thành công! Xin chúc mừng.");
+    return true;
+}
+     </script>
+</head>
+<body>
+    <section>
+        <div class="noi-dung">
+            <div class="form">
+                <a href="index.html"><img class="logo" src="images/footer.jpg" ></a>
+                <h2>Đăng Nhập </h2>
+                <form action="index.html">
+                    <div class="input-form">
+                        <span>Tên người dùng</span>
+                        <input autocomplete="off" type="text" id="tendangnhap" name="txtTendangnhap">
+                    </div>
+                    <div class="input-form">
+                        <span>Mật Khẩu</span>
+                        <input type="password" id="matkhau" name="txtMatKhau">
+                    </div>
+                    <div class="nho-dang-nhap">
+                        <label><input type="checkbox" name=""> Ghi Nhớ Đăng Nhập</label>
+                    </div>
+                    <div class="input-form">
+                        <input type="submit"onclick="return KiemTraThongTin()" value="Đăng Nhập">
+                    </div>
+                    <div class="input-form">
+                        <p>Bạn Chưa Có Tài Khoản? <a class="hoverlink" href="dangky.html">Đăng Ký</a></p>
+                    </div>
+                </form>
+                <h3>Đăng nhập bằng mạng xã hội...</h3>
+                <ul class="icon-dang-nhap">
+                    <li><a style="color: #3b5999;" href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a style="color: #dd4b39;" href="https://accounts.google.com/ServiceLogin/identifier?elo=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+                    <li><a style="color: #55acee;" href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/trangchu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ĐỒ GIA DỤNG</title>
+</head>
+<body>
+    <header name="top">
+        <div class="logo">
+            <a href="index.html"><img src="images/footer.jpg"></a>
+        </div>
+        <div class="nav">            
+            <ul>
+                <li><a href="index.html">TRANG CHỦ</a></li>
+                <li><a href="quanao.html">QUẦN ÁO</a></li>
+                <li><a href="laptop.html">ĐIỆN THOẠI & LAPTOP</a></li>
+                <li><a href="trangsuc.html">TRANG SỨC</a></li>
+                <li><a href="giadung.html">ĐỒ GIA DỤNG</a></li>
+                <li><a style="padding-top: 26px;" href="thanhtoan.html">THANH TOÁN <i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <div class="dangnhap">
+                <button type="button">
+                    <a style="padding: 9px 16.5px;" href="dangnhap.html">Đăng Nhập</a>
+                <button type="button">
+                    <a style="padding: 9px 25.8px;" href="dangky.html">Đăng Ký</a>
+                </button>
+            </div>
+            <form action="#">
+                <input type="text" placeholder="Tìm kiếm..." name="search" autocomplete="off">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+    </header>
+
+    <div class="slideshow">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="images/banner/bannertranggiadung.jpg" style="width:100%">
+            </div>
+              
+            <div class="mySlides fade">
+                <img src="images/banner/bannertranggiadung1.jpg" style="width:100%">
+            </div>
+              
+            <div class="mySlides fade">
+                <img src="images/banner/bannertranggiadung2.jpg" style="width:100%">
+            </div>
+        </div>
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
+        <script>
+            let slideIndex = 0;
+            showSlides();
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); 
+            }
+        </script>
+    </div>
+
+    <section>
+        <p style="margin-top: 50px;" class="name">ĐỒ GIA DỤNG</p>
+        <div class="xe">
+            <div class="xene">
+                <a href="dung1.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/4e3f12a1af1838fb2c3875ce343fccb2"></a>
+                <h3 style="color: grey; font-size: 12px;">Nồi nấu cháo chậm Bear 0,8L cho bé ăn dặm - Ninh hầm hấp cách thuỷ chưng yến đa năng SUBE001</h3>
+                <p class="gia"> GIÁ: 399.000 VNĐ </p>
+                <a class="linkshop" href="dung1.html">MUA NGAY</a>
+            </div>
+            <div class="xene">
+                <a href="dung2.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/6fad0527b52b55ef011ccb2cc8ef22a2"></a>
+                <h3 style="color: grey; font-size: 12px;">Bình đun siêu tốc GAABOR GK-S23P dung tích lớn 2.3L - 1500W - Thép không gỉ - Hàng chính hãng</h3>
+                <p class="gia"> GIÁ: 155.000 VNĐ </p>
+                <a class="linkshop" href="dung2.html">MUA NGAY</a>
+            </div>
+            <div class="xene">
+                <a href="dung3.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/77f84a86f3c64d1f1b96b9dcdd4384a7"></a>
+                <h3 style="color: grey; font-size: 12px;">Máy Sấy Tóc 2 Chiều Nóng Lạnh Công Suất Lớn / Toshiba 551 3000W CHẤT LƯỢNG CAO</h3>
+                <p class="gia"> GIÁ: 129.000 VNĐ </p>
+                <a class="linkshop" href="dung3.html">MUA NGAY</a>
+            </div>
+            <div class="xene">
+                <a href="dung4.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/28b28e8a8d96aa8f9ebc70bdaee88396"></a>
+                <h3 style="color: grey; font-size: 12px;">Máy khoan cầm tay TOTAL TG108136 750W Máy khoan điện có khoan động lực, 2 chức năng búa và khoan</h3>
+                <p class="gia"> GIÁ: 704.000 VNĐ </p>
+                <a class="linkshop" href="dung4.html">MUA NGAY</a>
+            </div>
+            <div class="xene">
+                <a href="dung5.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/87de1f25a7873b3a05ee47496ef6d6a6"></a>
+                <h3 style="color: grey; font-size: 12px;">Máy Phun Sương Cầm Tay Tạo Ẩm Nano , Máy Xông Mặt Mini Spa, Xông Tinh Dầu Xịt</h3>
+                <p class="gia"> GIÁ: 29.000 - 75.000 VNĐ </p>
+                <a class="linkshop" href="dung5.html">MUA NGAY</a>
+            </div>    
+        </div>
+        <div class="xe">
+            <div class="xene">
+                <a href="dung6.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/6b12e384961590b983aef654b1e76953"></a>
+                <h3 style="color: grey; font-size: 12px;">Nồi Cơm Điện Tử 1.5L BlueStone RCB-5949</h3>
+                <p class="gia"> GIÁ: 1.599.000 VNĐ </p>
+                <a class="linkshop" href="dung6.html">MUA NGAY</a>
+            </div>
+            <div class="xene">
+                <a href="dung7.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/bbefc771da6116258844d09392742782"></a>
+                <h3 style="color: grey; font-size: 12px;">Compo 3 Chảo Mini Tạo Hình</h3>
+                <p class="gia"> GIÁ: 100.000 VNĐ </p>
+                <a class="linkshop" href="dung7.html">MUA NGAY</a>
+            </div>
+            <div class="xene">
+                <a href="dung8.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/fd06d43875eeddf14e8dd6674f41cbb6"></a>
+                <h3 style="color: grey; font-size: 12px;">Bàn chải đánh răng than tre hoạt tính Hàn Quốc hàng loại 1 - KHO SỈ MB</h3>
+                <p class="gia"> GIÁ: 1.000 - 3.300 VNĐ </p>
+                <a class="linkshop" href="dung8.html">MUA NGAY</a>
+            </div>
+            <div class="xene">
+                <a href="dung9.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/6325c8fa2c621cae02105f0999c72086"></a>
+                <h3 style="color: grey; font-size: 12px;">Bộ chén dĩa Minh Long 23 sản phẩm Camellia Hoa Mai</h3>
+                <p class="gia"> GIÁ: 2.601.720 VNĐ </p>
+                <a class="linkshop" href="dung9.html">MUA NGAY</a>
+            </div>
+            <div class="xene">
+                <a href="dung10.html"><img style=" height: 220px; width: 100%;" src="https://cf.shopee.vn/file/0839677ba02989f09d0fe4e99fe28fe8"></a>
+                <h3 style="color: grey; font-size: 12px;">Nước rửa chén, vòi inox lấy nước rửa bát 304</h3>
+                <p class="gia"> GIÁ: 95.000 VNĐ </p>
+                <a class="linkshop" href="dung10.html">MUA NGAY</a>
+            </div>    
+        </div>
+
+
+    </section>
+
+
+    <footer >
+        <div class="gioithieu">
+            <a href="index.html"><img src="images/footer.jpg"></a>
+            <ul>
+                <li><b>Địa chỉ:</b> phường Hiệp Thành, Thủ Dầu Một, Bình Dương</li>
+                <li><b>Email:</b> muangay@gmail.com</li>
+                <li><b>SĐT:</b> 091 9208 875</li>
+                <li class="icon">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram-square"></i></a>
+                    <a href="https://coccoc.com/search?query=twitter"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://accounts.google.com/AccountChooser/signinchooser?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser"><i class="fa-regular fa-at"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="thongtin">
+            <h3>HỖ TRỢ</h3>
+            <ul>
+                <li> <a href="#"> > Hướng dẫn mua hàng</a></li>
+                <li> <a href="#"> > Hướng dẫn thanh toán</a></li>
+                <li> <a href="#"> > Chính sách bảo hành</a></li>
+                <li> <a href="#"> > Chính sách đổi trả</a></li>
+                <li><a href="#"> > Tư vấn Khách hàng</a></li>
+            </ul>
+        </div>
+        <div class="danhmuc">
+            <h3>LIÊN KẾT</h3>
+            <ul>
+                <li><a href="index.html">> Trang chủ</a></li>
+                <li><a href="quanao.html">> Quần áo</a></li>
+                <li><a href="laptop.html">> Điện thoại & Laptop</a></li>
+                <li><a href="trangsuc.html">> Trang sức</a></li>
+                <li><a href="giadung.html">> Đồ gia dụng</a></li>
+                <li><a href="thanhtoan.html">> Thanh toán</a></li>
+            </ul>
+        </div>
+    </footer>
+    <a class="dautrang" href="#top"><i class="fa-solid fa-angles-up"></i></a>
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/trangchu.css">
+    <link rel="stylesheet" href="css/thanhtoan.css">
+    <script language="javascript">
+        function KiemTraThongTin(){
+    var hoTen=document.getElementById("hoten");
+    if (hoTen.value==""){
+        alert("Vui lòng nhập Họ tên.");
+        hoTen.focus();
+        return false;
+    }
+    var quocGia=document.getElementById("quocgia");
+    if (quocGia.value==""){
+        alert("Vui lòng nhập quốc gia của bạn.");
+        quocGia.focus();
+        return false;
+    }
+    var diaChi=document.getElementById("diachi");
+    if (diaChi.value==""){
+        alert("Vui lòng nhập vào địa chỉ của bạn.");
+        diaChi.focus();
+        return false;
+    }
+    var thanhPho=document.getElementById("thanhpho");
+    if (thanhPho.value==""){
+        alert("Vui lòng nhập vào thành phố/tỉnh.");
+        thanhPho.focus();
+        return false;
+    }
+    var sodienThoai=document.getElementById("sodienthoai");
+    if (sodienThoai.value==""){
+        alert("Vui lòng nhập vào số điện thoại của bạn.");
+        sodienThoai.focus();
+        return false;
+    }
+    var email=window.document.getElementById("email") ;
+    re=/\w+@\w+\.\w+/;
+    if (email.value=="") {
+        alert("Bạn chưa nhập Email.") ;
+        email. focus () ;
+        return false;
+    }
+    else
+    if (re. test (email. value) ==false) {
+        alert("Email không đúng định dạng!");
+        email. focus () ;
+        return false;
+    }
+    var Checkbox=document.getElementById("checkbox");
+    if (Checkbox.checked == false){
+        alert("Xin vui lòng xác nhận thông tin.");
+        Checkbox.focus();
+        return false;
+    }
+    var thanhToan=document.getElementById("thanhtoan");
+    if (thanhToan.checked == false){
+        alert("Xin vui lòng chon thanh toán để tiếp tục.");
+        thanhToan.focus();
+        return false;
+    }
+    alert("Bạn đã cập nhật thông tin thành công.");
+    return true;
+}
+        
+        
+        d = new Date();
+        thu = d.getDay() ; ngay= d.getDate();
+        ngay= ((ngay< 10) ? '0' : '') + ngay;
+        thang= d.getMonth()+1;
+        thang= ((thang< 10) ? '0' : '') + thang;
+        nam= 1900+d.getYear();
+        gio = d.getHours();
+        gio=((gio<10) ? '0' : '') + gio;
+        phut = d.getMinutes();
+        phut= ((phut< 10) ? '0' : '') + phut;
+        giay = d.getSeconds();
+        if (giay < 10) giay='0'+qiay;
+        if (thu == 0) thu = " Chủ nhật";
+        if (thu == 1) thu = " Thứ hai";
+        if (thu == 2) thu = " Thứ ba";
+        if (thu == 3) thu = " Thứ tư";
+        if (thu == 4) thu = " Thứ năm";
+        if (thu == 5) thu = " Thứ sáu";
+        if (Lhu == 6) thu = " Thứ bảy";
+
+
+
+        
+        
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THANH TOÁN</title>
+</head>
+<body>
+    <header name="top">
+        <div class="logo">
+            <a href="index.html"><img src="images/footer.jpg"></a>
+        </div>
+        <div class="nav">            
+            <ul>
+                <li><a href="index.html">TRANG CHỦ</a></li>
+                <li><a href="quanao.html">QUẦN ÁO</a></li>
+                <li><a href="laptop.html">ĐIỆN THOẠI & LAPTOP</a></li>
+                <li><a href="trangsuc.html">TRANG SỨC</a></li>
+                <li><a href="giadung.html">ĐỒ GIA DỤNG</a></li>
+                <li><a style="padding-top: 26px;" href="thanhtoan.html">THANH TOÁN <i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <div class="dangnhap">
+                <button type="button">
+                    <a style="padding: 9px 16.5px;" href="dangnhap.html">Đăng Nhập</a>
+                <button type="button">
+                    <a style="padding: 9px 24px;" href="dangky.html">Đăng Ký</a>
+                </button>
+            </div>
+            <form action="#">
+                <input type="text" placeholder="Tìm kiếm..." name="search" autocomplete="off">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+    </header>
+    
+    <div class="noidung">
+        <section id="khoi1">
+            <div class="ttkh">
+                <h3>Thông tin Khách hàng: </h3>
+                <hr>
+                <form>
+                    <div class="onoidung">
+                        <input type="text" id="hoten" placeholder="Họ và tên*" autocomplete="off" >
+                    </div>
+                    <div class="onoidung">
+                        <input type="text" id="quocgia" placeholder="Quốc gia*" autocomplete="off" >
+                    </div>
+                    <div class="onoidung">
+                        <input type="text" id="diachi" placeholder="Địa chỉ*" autocomplete="off" >
+                    </div>
+                    <div class="onoidung">
+                        <input type="text" id="thanhpho" placeholder="Tỉnh / Thành phố*" autocomplete="off" >
+                    </div>
+                    <div class="onoidung">
+                        <input type="tel" id="sodienthoai" placeholder="Số điện thoại*" autocomplete="off" >
+                    </div>
+                    <div class="onoidung">
+                        <input type="email" id="email" placeholder="Địa chỉ Email*" autocomplete="off" >
+                    </div>
+                    <div class="ghichu">
+                        <h4>Ghi chú: </h4>
+                        <textarea name="thongtindh" id="thongtindh" placeholder="(VD: địa chỉ cụ thể, giờ giao nhận hàng theo yêu cầu,...)"></textarea>
+                    </div>
+                    <div>
+                        <p><input type="checkbox" id="checkbox"> Tôi xin cam đoan thông tin trên là hoàn toàn chính xác.</p>
+                    </div>
+                    <div class="osubmit">
+                        <input type="submit" onclick="return KiemTraThongTin()" id="submit" value="Gửi" >
+                        <input type="reset" id="reset" value="Hủy" >
+                    </div>
+                   
+                    
+                    
+                </form>
+            </div>
+        </section>
+
+
+
+        <section id="khoi2">
+            <form action="camon.html">
+                <div class="donhang" >
+                    <h3>ĐƠN HÀNG CỦA BẠN</h3>
+                    <p>
+                        <script Language="JavaScript">
+                            document.write ("<b>" +"Thời gian: " + gio + ":" + phut + ":" + giay +"<br>" ) ;
+                            document.write ("<b>Ngày:</b> " + ngay + "/" + thang + "/" + nam +"</b>") ;
+                        </script>
+                    </p>
+                    <div class="ott">
+                        <ul class="tieude">
+                            <li class="o1">Sản phẩm</li>
+                            <li class="o2">Giá</li>
+                            <li class="o3">Số lượng</li>
+                            <li class="o4">Thành Tiền</li>
+                        </ul>
+                        
+                        <ul class="trong">
+                            <li class="o1"></li>
+                            <li class="o2"></li>
+                            <li class="o3"></li>
+                            <li class="o4">0 đ</li>
+                        </ul>
+                        <ul class="trong">
+                            <li class="o1">Phụ Phí:</li>
+                            <li class="o2"></li>
+                            <li class="o3"></li>
+                            <li class="o4">0 đ</li>
+                        </ul>
+                        <ul class="trong">
+                            <li class="o1">Thuế(5%):</li>
+                            <li class="o2"></li>
+                            <li class="o3"></li>
+                            <li class="o4">0 đ</li>
+                        </ul>
+                        <ul class="trong">
+                            <li class="o1">Phí ship:</li>
+                            <li class="o2"></li>
+                            <li class="o3"></li>
+                            <li class="o4">0 đ</li>
+                        </ul>
+                    </div>
+                    <div class="tong">
+                        <h5>Tổng số lượng:</h5>
+                        <hr class="thehr">
+                    </div>
+                    <div style="padding-top: 10px; float: right;">
+                        <h3>TỔNG : <span style="font-size: 23px; font-weight: 500;"> 0 VNĐ</span></h3>
+                    </div>
+                    <div class="thanhtoan">
+                        <input type="submit" href="camon.html" id="thanhtoan" value="THANH TOÁN" >
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+    <a href=""></a>
+
+    <footer style="margin-top: 50px;" >
+        <div class="gioithieu">
+            <a href="index.html"><img src="images/footer.jpg"></a>
+            <ul>
+                <li><b>Địa chỉ:</b> phường Hiệp Thành, Thủ Dầu Một, Bình Dương</li>
+                <li><b>Email:</b> muangay@gmail.com</li>
+                <li><b>SĐT:</b> 091 9208 875</li>
+                <li class="icon">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram-square"></i></a>
+                    <a href="https://coccoc.com/search?query=twitter"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://accounts.google.com/AccountChooser/signinchooser?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser"><i class="fa-regular fa-at"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="thongtin">
+            <h3>HỖ TRỢ</h3>
+            <ul>
+                <li> <a href="#"> > Hướng dẫn mua hàng</a></li>
+                <li> <a href="#"> > Hướng dẫn thanh toán</a></li>
+                <li> <a href="#"> > Chính sách bảo hành</a></li>
+                <li> <a href="#"> > Chính sách đổi trả</a></li>
+                <li><a href="#"> > Tư vấn Khách hàng</a></li>
+            </ul>
+        </div>
+        <div class="danhmuc">
+            <h3>LIÊN KẾT</h3>
+            <ul>
+                <li><a href="index.html">> Trang chủ</a></li>
+                <li><a href="quanao.html">> Quần áo</a></li>
+                <li><a href="laptop.html">> Điện thoại & Laptop</a></li>
+                <li><a href="trangsuc.html">> Trang sức</a></li>
+                <li><a href="giadung.html">> Đồ gia dụng</a></li>
+                <li><a href="thanhtoan.html">> Thanh toán</a></li>
+            </ul>
+        </div>
+    </footer>
+    <a class="dautrang" href="#top"><i class="fa-solid fa-angles-up"></i></a>
+</body>
+</html>
