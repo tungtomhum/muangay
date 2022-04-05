@@ -125,12 +125,10 @@ height: 550px;
 }
 
 @media (max-width: 768px){
-  section .img-bg{
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+  section {
+      margin-top: -50px;
+      width: 90%;
+      box-sizing: border-box;
   }
   section .noi-dung{
       display: flex;
@@ -142,9 +140,7 @@ height: 550px;
   }
   section .noi-dung .form{
       width: 100%;
-      padding: 40px;
-      background: rgba(255 255 255 / 0.9);
-      margin: 50px;
+      margin: 15px;
   }
   section .noi-dung .form h3{
       color: #607d8b;
